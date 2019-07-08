@@ -10,7 +10,15 @@ import SwiftUI
 
 struct ContentView : View {
     var body: some View {
-        Text("Hello World")
+        NavigationView {
+            List(tangshiData.identified(by: \.id)) { item in
+                NavigationLink(destination: TangShiDetail(tangshi: item)) {
+                    TangShiRow(tangshi: item)
+                }
+            }
+            .navigationBarTitle(Text("唐诗三百首"))
+        }
+        
     }
 }
 

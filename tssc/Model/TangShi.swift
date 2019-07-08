@@ -1,0 +1,16 @@
+//
+//  TangShi.swift
+//  tssc
+//
+//  Created by fengde on 2019/7/8.
+//  Copyright © 2019 fengde. All rights reserved.
+//
+
+import Foundation
+
+struct TangShi: Hashable, Codable {
+    var id: Int
+    var author: String
+    var paragraphs: [String]
+    var title: String
+}
