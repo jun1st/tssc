@@ -18,6 +18,7 @@
 		8ACB16D722D2F39D0070B448 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACB16D622D2F39D0070B448 /* Data.swift */; };
 		8ACB16D922D2FF710070B448 /* TangShiRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACB16D822D2FF710070B448 /* TangShiRow.swift */; };
 		8ACB16DB22D301820070B448 /* TangShiDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACB16DA22D301820070B448 /* TangShiDetail.swift */; };
+		8ACB16DD22D4360C0070B448 /* tang_300.json in Resources */ = {isa = PBXBuildFile; fileRef = 8ACB16DC22D4360C0070B448 /* tang_300.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		8ACB16D622D2F39D0070B448 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		8ACB16D822D2FF710070B448 /* TangShiRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TangShiRow.swift; sourceTree = "<group>"; };
 		8ACB16DA22D301820070B448 /* TangShiDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TangShiDetail.swift; sourceTree = "<group>"; };
+		8ACB16DC22D4360C0070B448 /* tang_300.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tang_300.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				8A23B02522D2E934007643F0 /* tang.json */,
+				8ACB16DC22D4360C0070B448 /* tang_300.json */,
 			);
 			path = Content;
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 				8A23B01A22CDEAEA007643F0 /* Preview Assets.xcassets in Resources */,
 				8A23B01722CDEAEA007643F0 /* Assets.xcassets in Resources */,
 				8A23B02622D2E934007643F0 /* tang.json in Resources */,
+				8ACB16DD22D4360C0070B448 /* tang_300.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

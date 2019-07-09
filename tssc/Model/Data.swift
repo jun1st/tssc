@@ -8,7 +8,9 @@
 
 import Foundation
 
-let tangshiData: [TangShi] = load("tang.json")
+let tangshiData: [TangShi] = load("tang_300.json")
+
+let top3: [String] = ["李白", "杜甫", "王维", "白居易", "崔灏", "孟浩然", "李商隐", "王昌龄", "杜牧", "陈子昂"]
 
 
 func load<T: Decodable>(_ filename: String, as type: T.Type = T.self) -> T {

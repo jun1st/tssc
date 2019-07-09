@@ -11,6 +11,7 @@ import Foundation
 struct TangShi: Hashable, Codable {
     var id: Int
     var author: String
-    var paragraphs: [String]
+    var contents: [String]
     var title: String
+    var type: String
 }

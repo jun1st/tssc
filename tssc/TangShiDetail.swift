@@ -15,14 +15,17 @@ struct TangShiDetail : View {
         VStack {
             Text(tangshi.title)
                 .font(.title)
+                .multilineTextAlignment(.center)
+                .lineLimit(2)
             Text(tangshi.author)
                 .font(.subheadline)
-                .padding(.top, 10.0)
+                .padding(.top, 2)
+            Divider()
             
-            ForEach(tangshi.paragraphs.identified(by: \.self)) {
+            ForEach(tangshi.contents.identified(by: \.self)) {
                Text($0)
-                   .multilineTextAlignment(.center)
-                   .padding()
+                    .frame(minWidth: 0, maxWidth: .infinity, alignment: .center)
+                    .padding(.top, 3)
             }
             
         }
