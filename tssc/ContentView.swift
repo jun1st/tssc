@@ -15,18 +15,45 @@ struct ContentView : View {
                 VStack {
                     VStack(alignment: .center, spacing: 2) {
                         Text("今日推荐")
-                            .background(Color.green)
-                        Text("今日推荐")
-                            .background(Color.red)
+                            .font(.title)
+                            .color(Color.white)
                     }
                     .frame(minWidth:0, maxWidth: .infinity, minHeight: 100, maxHeight: 100)
-                    .background(/*@START_MENU_TOKEN@*/Color.blue/*@END_MENU_TOKEN@*/)
+                        .background(Color(red: 60/255, green: 112/255, blue: 174/255))
+                    .cornerRadius(10)
                     .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
 
                     SectionView(title: "十大诗人")
-                    SectionView(title: "十大知名诗")
-                    SectionView(title: "五言绝句")
                 }
+                
+                
+                HStack {
+                    Text("分类")
+                        .font(.headline)
+                        .fontWeight(.heavy)
+                    Spacer()
+                }.padding()
+                
+                
+                VStack {
+                    Text("五言绝句")
+                        .font(.headline)
+                        .color(Color.white)
+                }
+                .frame(minWidth:0, maxWidth: .infinity, minHeight: 100, maxHeight: 100)
+                    .background(Color.gray)
+                    .cornerRadius(10)
+                    .padding([.leading, .trailing])
+                
+                VStack {
+                    Text("七言绝句")
+                        .font(.headline)
+                        .color(Color.white)
+                }
+                .frame(minWidth:0, maxWidth: .infinity, minHeight: 100, maxHeight: 100)
+                    .background(Color.gray)
+                    .cornerRadius(10)
+                    .padding([.leading, .trailing])
             }
             .navigationBarTitle(Text("唐诗三百首"))
         }
@@ -49,6 +76,7 @@ struct SectionView : View {
             HStack {
                 Text(title)
                     .font(.headline)
+                    .fontWeight(.heavy)
                     Spacer()
                 }
                 .padding(.leading)
@@ -58,9 +86,10 @@ struct SectionView : View {
                             VStack {
                                 Text(top)
                             }
-                            .frame(width: 80)
-                            .frame(height: 100)
-                            .border(Color.gray, width: 1, cornerRadius: 8)
+                            .frame(width: 90)
+                            .frame(height: 120)
+                            .background(Color(red: 242/255, green: 228/255, blue: 221/255))
+                            .cornerRadius(10)
                             
                         }
                     }
