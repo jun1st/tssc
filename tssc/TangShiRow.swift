@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct TangShiRow : View {
+    
     var tangshi: TangShi
     
     var body: some View {

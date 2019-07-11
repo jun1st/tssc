@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct ContentView : View {
+    
     var body: some View {
         NavigationView {
             ScrollView(.vertical, showsIndicators: false) {
@@ -35,28 +36,32 @@ struct ContentView : View {
                 }.padding()
                 
                 
-                VStack {
-                    Text("五言绝句")
-                        .font(.headline)
-                        .color(Color.white)
+                NavigationLink(destination: TangShiList(tangshis: wuyanJueJu)) {
+                    VStack {
+                        Text("五言绝句")
+                            .font(.headline)
+                            .color(Color.white)
+                    }
+                    .frame(minWidth:0, maxWidth: .infinity, minHeight: 100, maxHeight: 100)
+                        .background(Color.gray)
+                        .cornerRadius(10)
+                        .padding([.leading, .trailing])
                 }
-                .frame(minWidth:0, maxWidth: .infinity, minHeight: 100, maxHeight: 100)
-                    .background(Color.gray)
-                    .cornerRadius(10)
-                    .padding([.leading, .trailing])
                 
-                VStack {
-                    Text("七言绝句")
-                        .font(.headline)
-                        .color(Color.white)
+                NavigationLink(destination: TangShiList(tangshis: qiyan)) {
+                    VStack {
+                        Text("七言绝句")
+                            .font(.headline)
+                            .color(Color.white)
+                    }
+                    .frame(minWidth:0, maxWidth: .infinity, minHeight: 100, maxHeight: 100)
+                        .background(Color.gray)
+                        .cornerRadius(10)
+                        .padding([.leading, .trailing])
                 }
-                .frame(minWidth:0, maxWidth: .infinity, minHeight: 100, maxHeight: 100)
-                    .background(Color.gray)
-                    .cornerRadius(10)
-                    .padding([.leading, .trailing])
             }
             .navigationBarTitle(Text("唐诗三百首"))
-        }
+    }
     }
 }
 
@@ -83,14 +88,17 @@ struct SectionView : View {
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack {
                         ForEach(top3.identified(by: \.self)) { top in
-                            VStack {
-                                Text(top)
+                            NavigationLink(destination: TangShiList(tangshis: tangshiData.filter { $0.author == top })) {
+                                VStack {
+                                    Text(top)
+                                }
+                                .frame(width: 90)
+                                .frame(height: 120)
+                                .background(Color(red: 242/255, green: 228/255, blue: 221/255))
+                                .shadow(radius: 10)
+                                .cornerRadius(10)
+                                
                             }
-                            .frame(width: 90)
-                            .frame(height: 120)
-                            .background(Color(red: 242/255, green: 228/255, blue: 221/255))
-                            .cornerRadius(10)
-                            
                         }
                     }
                     }.padding()
