@@ -15,9 +15,11 @@ struct TangShiList : View {
     var body: some View {
         
         List(tangshis.identified(by: \.id)) {item in
-            TangShiRow(tangshi: item)
+            NavigationLink(destination: TangShiDetail(tangshi: item)) {
+                TangShiRow(tangshi: item)
+            }
         }
-        .navigationBarHidden(true)
+        .navigationBarTitle("Title", displayMode: .inline)
         
     }
 }

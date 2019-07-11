@@ -28,7 +28,7 @@ struct TangShiDetail : View {
                     .padding(.top, 3)
             }
             
-        }
+        }.navigationBarTitle(Text(tangshi.title), displayMode: .inline)
     }
 }
 
