@@ -14,13 +14,11 @@ struct ContentView : View {
         NavigationView {
             ScrollView(.vertical, showsIndicators: false) {
                 VStack {
-                    VStack(alignment: .center, spacing: 2) {
-                        Text("今日推荐")
-                            .font(.title)
-                            .color(Color.white)
-                    }
-                    .frame(minWidth:0, maxWidth: .infinity, minHeight: 100, maxHeight: 100)
-                        .background(Color(red: 60/255, green: 112/255, blue: 174/255))
+                    Image("Banner")
+                        .resizable()
+                        .frame(minWidth:0, maxWidth: .infinity, minHeight: 100, maxHeight: 120)
+                        
+                        .aspectRatio(contentMode: ContentMode.fit)
                     .cornerRadius(10)
                     .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
 
@@ -38,24 +36,24 @@ struct ContentView : View {
                 
                 NavigationLink(destination: TangShiList(tangshis: wuyanJueJu)) {
                     VStack {
-                        Text("五言绝句")
+                        Text("[五言绝句]")
                             .font(.headline)
-                            .color(Color.white)
+                            .color(Color(red: 48/255, green: 120/255, blue: 175/255))
                     }
                     .frame(minWidth:0, maxWidth: .infinity, minHeight: 100, maxHeight: 100)
-                        .background(Color.gray)
+                        .background(Color(red: 209/255, green: 247/255, blue: 209/255))
                         .cornerRadius(10)
                         .padding([.leading, .trailing])
                 }
                 
                 NavigationLink(destination: TangShiList(tangshis: qiyan)) {
                     VStack {
-                        Text("七言绝句")
+                        Text("[七言绝句]")
                             .font(.headline)
-                            .color(Color.white)
+                            .color(Color(red: 48/255, green: 120/255, blue: 175/255))
                     }
                     .frame(minWidth:0, maxWidth: .infinity, minHeight: 100, maxHeight: 100)
-                        .background(Color.gray)
+                        .background(Color(red: 177/255, green: 230/255, blue: 230/255))
                         .cornerRadius(10)
                         .padding([.leading, .trailing])
                 }
