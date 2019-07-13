@@ -28,7 +28,7 @@ struct ContentView : View {
                 
                 HStack {
                     Text("分类")
-                        .font(.headline)
+                        .font(.title)
                         .fontWeight(.heavy)
                     Spacer()
                 }.padding()
@@ -78,7 +78,7 @@ struct SectionView : View {
         return VStack() {
             HStack {
                 Text(title)
-                    .font(.headline)
+                    .font(.title)
                     .fontWeight(.heavy)
                     Spacer()
                 }
