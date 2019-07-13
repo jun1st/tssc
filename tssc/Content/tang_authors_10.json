@@ -1,0 +1,72 @@
+[
+    {
+        "name": "李白",
+        "nickname": "太白",
+        "bgColors": [224, 147, 148],
+        "baikeUrl": "",
+        "hexBgColor": ""
+    },
+    {
+        "name": "杜甫",
+        "nickname": "",
+        "bgColors": [250, 233, 147],
+        "hexBgColor": "",
+        "baikeUrl": ""
+    },
+    {
+        "name": "王维",
+        "nickname": "",
+        "bgColors": [245, 202, 109],
+        "hexBgColor": "",
+        "baikeUrl": ""
+    },
+    {
+        "name": "白居易",
+        "nickname": "",
+        "bgColors": [160, 198, 237],
+        "hexBgColor": "",
+        "baikeUrl": ""
+    },
+    {
+        "name": "崔颢",
+        "nickname": "",
+        "bgColors": [241, 220, 205],
+        "hexBgColor": "",
+        "baikeUrl": ""
+    },
+    {
+        "name": "孟浩然",
+        "nickname": "",
+        "bgColors": [224, 242, 196],
+        "hexBgColor": "",
+        "baikeUrl": ""
+    },
+    {
+        "name": "李商隐",
+        "nickname": "",
+        "bgColors": [224, 147, 148],
+        "hexBgColor": "",
+        "baikeUrl": ""
+    },
+    {
+        "name": "王昌龄",
+        "nickname": "",
+        "bgColors": [160, 198, 237],
+        "hexBgColor": "",
+        "baikeUrl": ""
+    },
+    {
+        "name": "杜牧",
+        "nickname": "",
+        "bgColors": [241, 220, 205],
+        "hexBgColor": "",
+        "baikeUrl": ""
+    },
+    {
+        "name": "陈子昂",
+        "nickname": "",
+        "bgColors": [245, 202, 109],
+        "hexBgColor": "",
+        "baikeUrl": ""
+    },
+]

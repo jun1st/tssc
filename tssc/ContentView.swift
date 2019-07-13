@@ -85,14 +85,15 @@ struct SectionView : View {
                 .padding(.leading)
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack {
-                        ForEach(top3.identified(by: \.self)) { top in
-                            NavigationLink(destination: TangShiList(tangshis: tangshiData.filter { $0.author == top })) {
+                        ForEach(authors.identified(by: \.name)) { author in
+                            NavigationLink(destination: TangShiList(tangshis: tangshiData.filter { $0.author == author.name })) {
                                 VStack {
-                                    Text(top)
+                                    Text(author.name)
+                                        .color(Color.gray)
                                 }
                                 .frame(width: 90)
                                 .frame(height: 120)
-                                .background(Color(red: 242/255, green: 228/255, blue: 221/255))
+                                .background(Color(red: 241/255, green: 220/255, blue: 205/255))
                                 .shadow(radius: 10)
                                 .cornerRadius(10)
                                 

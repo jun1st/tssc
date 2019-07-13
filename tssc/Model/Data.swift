@@ -10,11 +10,13 @@ import Foundation
 
 let tangshiData: [TangShi] = load("tang_300.json")
 
-let top3: [String] = ["李白", "杜甫", "王维", "白居易", "崔灏", "孟浩然", "李商隐", "王昌龄", "杜牧", "陈子昂"]
+//let top3: [String] = ["李白", "杜甫", "王维", "白居易", "崔灏", "孟浩然", "李商隐", "王昌龄", "杜牧", "陈子昂"]
 
 let wuyanJueJu: [TangShi] = tangshiData.filter { $0.type == "五言古诗" }
 
 let qiyan: [TangShi] = tangshiData.filter { $0.type == "七言古诗" }
+
+let authors: [Author] = load("tang_authors_10.json")
 
 
 func load<T: Decodable>(_ filename: String, as type: T.Type = T.self) -> T {
