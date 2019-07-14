@@ -16,10 +16,12 @@ struct TangShiRow : View {
         HStack {
             VStack(alignment: .leading) {
                 Text(tangshi.title)
-                    .font(.title)
+                    .font(.headline)
                 Text(tangshi.author)
                     .font(.subheadline)
-                    .color(.gray)
+                    .fontWeight(.thin)
+                    .color(.black)
+                    .padding(.top, 1.0)
             }
             Spacer()
         }

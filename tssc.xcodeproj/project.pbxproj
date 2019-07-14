@@ -11,6 +11,7 @@
 		8273D40E22D97DDE005E73BF /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8273D40D22D97DDE005E73BF /* WebView.swift */; };
 		8273D41222DA2543005E73BF /* tang_authors_10.json in Resources */ = {isa = PBXBuildFile; fileRef = 8273D41122DA2543005E73BF /* tang_authors_10.json */; };
 		8273D41422DA274E005E73BF /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8273D41322DA274E005E73BF /* Author.swift */; };
+		8273D41622DB799F005E73BF /* TangShiTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8273D41522DB799F005E73BF /* TangShiTitle.swift */; };
 		8A23B01122CDEAE8007643F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A23B01022CDEAE8007643F0 /* AppDelegate.swift */; };
 		8A23B01322CDEAE8007643F0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A23B01222CDEAE8007643F0 /* SceneDelegate.swift */; };
 		8A23B01522CDEAE8007643F0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A23B01422CDEAE8007643F0 /* ContentView.swift */; };
@@ -30,6 +31,7 @@
 		8273D40D22D97DDE005E73BF /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		8273D41122DA2543005E73BF /* tang_authors_10.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tang_authors_10.json; sourceTree = "<group>"; };
 		8273D41322DA274E005E73BF /* Author.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
+		8273D41522DB799F005E73BF /* TangShiTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TangShiTitle.swift; sourceTree = "<group>"; };
 		8A23B00D22CDEAE8007643F0 /* tssc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tssc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A23B01022CDEAE8007643F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A23B01222CDEAE8007643F0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				8ACB16DA22D301820070B448 /* TangShiDetail.swift */,
 				82525AA622D77A6C00BE64D3 /* TangShiList.swift */,
 				8273D40D22D97DDE005E73BF /* WebView.swift */,
+				8273D41522DB799F005E73BF /* TangShiTitle.swift */,
 			);
 			path = tssc;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 				8273D41422DA274E005E73BF /* Author.swift in Sources */,
 				8273D40E22D97DDE005E73BF /* WebView.swift in Sources */,
 				82525AA722D77A6C00BE64D3 /* TangShiList.swift in Sources */,
+				8273D41622DB799F005E73BF /* TangShiTitle.swift in Sources */,
 				8A23B01522CDEAE8007643F0 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

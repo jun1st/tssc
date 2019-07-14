@@ -19,49 +19,75 @@ struct ContentView : View {
                         .frame(minWidth:0, maxWidth: .infinity, minHeight: 100, maxHeight: 120)
                         
                         .aspectRatio(contentMode: ContentMode.fit)
-                    .cornerRadius(10)
-                    .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                        .cornerRadius(10)
+                        .padding(.all)
 
                     SectionView(title: "十大诗人")
-                }
-                
-                
-                HStack {
-                    Text("分类")
-                        .font(.title)
-                        .fontWeight(.heavy)
-                    Spacer()
-                }.padding()
-                
-                
-                NavigationLink(destination: TangShiList(tangshis: wuyanJueJu)) {
-                    VStack {
-                        Text("[五言绝句]")
-                            .font(.headline)
-                            .color(Color(red: 48/255, green: 120/255, blue: 175/255))
+                    
+                    HStack {
+                        Text("分类")
+                            .font(.title)
+                            .fontWeight(.heavy)
+                        Spacer()
+                    }.padding()
+                    
+                    NavigationLink(destination: TangShiList(title: "五言绝句", tangshis: wuyanJueJu)) {
+                        VStack {
+                            Text("[五言绝句]")
+                                .font(.headline)
+                                .color(Color(red: 48/255, green: 120/255, blue: 175/255))
+                        }
+                        .frame(minWidth:0, maxWidth: .infinity, minHeight: 100, maxHeight: 100)
+                            .background(Color(red: 209/255, green: 247/255, blue: 209/255))
+                            .cornerRadius(10)
+                            .padding([.leading, .trailing])
                     }
-                    .frame(minWidth:0, maxWidth: .infinity, minHeight: 100, maxHeight: 100)
-                        .background(Color(red: 209/255, green: 247/255, blue: 209/255))
-                        .cornerRadius(10)
-                        .padding([.leading, .trailing])
-                }
-                
-                NavigationLink(destination: TangShiList(tangshis: qiyan)) {
-                    VStack {
-                        Text("[七言绝句]")
-                            .font(.headline)
-                            .color(Color(red: 48/255, green: 120/255, blue: 175/255))
+                    
+                    NavigationLink(destination: TangShiList(title: "七言绝句", tangshis: qiyan)) {
+                        VStack {
+                            Text("[七言绝句]")
+                                .font(.headline)
+                                .color(Color(red: 48/255, green: 120/255, blue: 175/255))
+                        }
+                        .frame(minWidth:0, maxWidth: .infinity, minHeight: 100, maxHeight: 100)
+                            .background(Color(red: 177/255, green: 230/255, blue: 230/255))
+                            .cornerRadius(10)
+                            .padding([.leading, .trailing])
                     }
-                    .frame(minWidth:0, maxWidth: .infinity, minHeight: 100, maxHeight: 100)
-                        .background(Color(red: 177/255, green: 230/255, blue: 230/255))
-                        .cornerRadius(10)
-                        .padding([.leading, .trailing])
+                    
                 }
-            }
-            .navigationBarTitle(Text("唐诗三百首"))
-    }
+            }.navigationBarTitle(Text("唐诗三百首"))
+        }
     }
 }
+                
+                
+//                    HStack {
+//                        Text("分类")
+//                            .font(.title)
+//                            .fontWeight(.heavy)
+//                        Spacer()
+//                    }.padding()
+//
+//
+
+//
+//                    NavigationLink(destination: TangShiList(tangshis: qiyan)) {
+//                        VStack {
+//                            Text("[七言绝句]")
+//                                .font(.headline)
+//                                .color(Color(red: 48/255, green: 120/255, blue: 175/255))
+//                        }
+//                        .frame(minWidth:0, maxWidth: .infinity, minHeight: 100, maxHeight: 100)
+//                            .background(Color(red: 177/255, green: 230/255, blue: 230/255))
+//                            .cornerRadius(10)
+//                            .padding([.leading, .trailing])
+//                    }
+//                }
+//                .navigationBarTitle(Text("唐诗三百首"))
+//            }
+//    }
+//}
 
 #if DEBUG
 struct ContentView_Previews : PreviewProvider {
@@ -81,27 +107,32 @@ struct SectionView : View {
                     .font(.title)
                     .fontWeight(.heavy)
                     Spacer()
-                }
-                .padding(.leading)
-                ScrollView(.horizontal, showsIndicators: false) {
-                    HStack {
-                        ForEach(authors.identified(by: \.name)) { author in
-                            NavigationLink(destination: TangShiList(tangshis: tangshiData.filter { $0.author == author.name })) {
-                                VStack {
-                                    Text(author.name)
-                                        .color(Color.gray)
-                                }
-                                .frame(width: 90)
-                                .frame(height: 120)
-                                .background(Color(red: 241/255, green: 220/255, blue: 205/255))
-                                .shadow(radius: 10)
-                                .cornerRadius(10)
-                                
+            }
+            .padding(.leading)
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack {
+                    ForEach(authors.identified(by: \.name)) { author in
+                        NavigationLink(destination: TangShiList(title: author.name, tangshis: self.tangshisOf(name: author.name))) {
+                            VStack {
+                                Text(author.name)
+                                    .color(Color.gray)
                             }
+                            .frame(width: 90)
+                            .frame(height: 120)
+                            .background(Color(red: 241/255, green: 220/255, blue: 205/255))
+                            .shadow(radius: 10)
+                            .cornerRadius(10)
+                            
                         }
                     }
-                    }.padding()
                 }
-                .padding(.top)
+            }.padding()
         }
+        .padding(.top)
     }
+    
+    func tangshisOf(name: String) -> [TangShi] {
+        return tangshiData.filter { $0.author == name }
+    }
+}
+

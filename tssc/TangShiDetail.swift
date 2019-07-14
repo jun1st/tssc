@@ -15,27 +15,33 @@ struct TangShiDetail : View {
         VStack {
             Text(tangshi.title)
                 .font(.title)
+                .lineLimit(nil)
                 .multilineTextAlignment(.center)
-                .lineLimit(2)
+                .padding(10)
+            
             Text(tangshi.author)
-                .font(.subheadline)
+                .font(.headline)
                 .padding(.top, 2)
+            
             Divider()
             
-            ForEach(tangshi.contents.identified(by: \.self)) {
-               Text($0)
-                    .frame(minWidth: 0, maxWidth: .infinity, alignment: .center)
-                    .padding(.top, 3)
+            ScrollView(.vertical, showsIndicators: false) {
+                VStack {
+                    ForEach(tangshi.contents.identified(by: \.self)) {
+                        Text($0)
+                            .frame(minWidth: 0, maxWidth: .infinity, alignment: .center)
+                            .padding(.top, 3)
+                    }
+                }
             }
-            
-        }.navigationBarTitle(Text(tangshi.title), displayMode: .inline)
+        }.navigationBarTitle(Text("正文"), displayMode: .inline)
     }
 }
 
 #if DEBUG
 struct TangShiDetail_Previews : PreviewProvider {
     static var previews: some View {
-        TangShiDetail(tangshi: tangshiData[0])
+        TangShiDetail(tangshi: tangshiData[49])
     }
 }
 #endif

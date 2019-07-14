@@ -10,24 +10,23 @@ import SwiftUI
 
 struct TangShiList : View {
     
+    var title: String
     var tangshis: [TangShi];
     
     var body: some View {
         
-        List(tangshis.identified(by: \.id)) {item in
+        List(self.tangshis.identified(by: \.self)) { item in
             NavigationLink(destination: TangShiDetail(tangshi: item)) {
                 TangShiRow(tangshi: item)
             }
-        }
-        .navigationBarTitle("Title", displayMode: .inline)
-        
+        }.navigationBarTitle(Text(title), displayMode: .inline)
     }
 }
 
 #if DEBUG
 struct TangShiList_Previews : PreviewProvider {
     static var previews: some View {
-        TangShiList(tangshis: tangshiData)
+        TangShiList(title: "李白", tangshis: tangshiData)
     }
 }
 #endif
