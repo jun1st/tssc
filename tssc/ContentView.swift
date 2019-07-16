@@ -22,7 +22,9 @@ struct ContentView : View {
                         .cornerRadius(10)
                         .padding(.all)
 
-                    SectionView(title: "十大诗人")
+                    AuthorView(title: "十大诗人")
+                    
+                    TypeView(title: "分类")
                     
                     HStack {
                         Text("分类")
@@ -97,7 +99,7 @@ struct ContentView_Previews : PreviewProvider {
 }
 #endif
 
-struct SectionView : View {
+struct AuthorView : View {
     var title: String
     
     var body: some View {
@@ -112,7 +114,7 @@ struct SectionView : View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack {
                     ForEach(authors.identified(by: \.name)) { author in
-                        NavigationLink(destination: TangShiList(title: author.name, tangshis: self.tangshisOf(name: author.name))) {
+                        NavigationLink(destination: AuthorDetail(author: author)) {
                             VStack {
                                 Text(author.name)
                                     .color(Color.gray)
@@ -124,6 +126,45 @@ struct SectionView : View {
                             .cornerRadius(10)
                             
                         }
+                    }
+                }
+            }.padding()
+        }
+        .padding(.top)
+    }
+    
+    func tangshisOf(name: String) -> [TangShi] {
+        return tangshiData.filter { $0.author == name }
+    }
+}
+
+struct TypeView : View {
+    var title: String
+    
+    var body: some View {
+        return VStack() {
+            HStack {
+                Text(title)
+                    .font(.title)
+                    .fontWeight(.heavy)
+                Spacer()
+            }
+            .padding(.leading)
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack {
+                    ForEach(types.identified(by: \.self)) { author in
+//                        NavigationLink(destination: AuthorDetail(author: author)) {
+                            VStack {
+                                Text(author)
+                                    .color(Color.gray)
+                            }
+                            .frame(width: 90)
+                                .frame(height: 120)
+                                .background(Color(red: 241/255, green: 220/255, blue: 205/255))
+                                .shadow(radius: 10)
+                                .cornerRadius(10)
+                            
+//                        }
                     }
                 }
             }.padding()

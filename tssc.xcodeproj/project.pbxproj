@@ -13,6 +13,7 @@
 		8273D41422DA274E005E73BF /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8273D41322DA274E005E73BF /* Author.swift */; };
 		8273D41622DB799F005E73BF /* TangShiTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8273D41522DB799F005E73BF /* TangShiTitle.swift */; };
 		828A02EC22DE12F300E48499 /* result.json in Resources */ = {isa = PBXBuildFile; fileRef = 828A02EB22DE12F300E48499 /* result.json */; };
+		828A02EF22DE187200E48499 /* AuthorDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828A02EE22DE187200E48499 /* AuthorDetail.swift */; };
 		8A23B01122CDEAE8007643F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A23B01022CDEAE8007643F0 /* AppDelegate.swift */; };
 		8A23B01322CDEAE8007643F0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A23B01222CDEAE8007643F0 /* SceneDelegate.swift */; };
 		8A23B01522CDEAE8007643F0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A23B01422CDEAE8007643F0 /* ContentView.swift */; };
@@ -34,6 +35,7 @@
 		8273D41322DA274E005E73BF /* Author.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
 		8273D41522DB799F005E73BF /* TangShiTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TangShiTitle.swift; sourceTree = "<group>"; };
 		828A02EB22DE12F300E48499 /* result.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = result.json; sourceTree = "<group>"; };
+		828A02EE22DE187200E48499 /* AuthorDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorDetail.swift; sourceTree = "<group>"; };
 		8A23B00D22CDEAE8007643F0 /* tssc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tssc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A23B01022CDEAE8007643F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A23B01222CDEAE8007643F0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				82525AA622D77A6C00BE64D3 /* TangShiList.swift */,
 				8273D40D22D97DDE005E73BF /* WebView.swift */,
 				8273D41522DB799F005E73BF /* TangShiTitle.swift */,
+				828A02EE22DE187200E48499 /* AuthorDetail.swift */,
 			);
 			path = tssc;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				82525AA722D77A6C00BE64D3 /* TangShiList.swift in Sources */,
 				8273D41622DB799F005E73BF /* TangShiTitle.swift in Sources */,
 				8A23B01522CDEAE8007643F0 /* ContentView.swift in Sources */,
+				828A02EF22DE187200E48499 /* AuthorDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
