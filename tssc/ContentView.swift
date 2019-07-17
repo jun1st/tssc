@@ -62,34 +62,6 @@ struct ContentView : View {
         }
     }
 }
-                
-                
-//                    HStack {
-//                        Text("分类")
-//                            .font(.title)
-//                            .fontWeight(.heavy)
-//                        Spacer()
-//                    }.padding()
-//
-//
-
-//
-//                    NavigationLink(destination: TangShiList(tangshis: qiyan)) {
-//                        VStack {
-//                            Text("[七言绝句]")
-//                                .font(.headline)
-//                                .color(Color(red: 48/255, green: 120/255, blue: 175/255))
-//                        }
-//                        .frame(minWidth:0, maxWidth: .infinity, minHeight: 100, maxHeight: 100)
-//                            .background(Color(red: 177/255, green: 230/255, blue: 230/255))
-//                            .cornerRadius(10)
-//                            .padding([.leading, .trailing])
-//                    }
-//                }
-//                .navigationBarTitle(Text("唐诗三百首"))
-//            }
-//    }
-//}
 
 #if DEBUG
 struct ContentView_Previews : PreviewProvider {
@@ -152,10 +124,10 @@ struct TypeView : View {
             .padding(.leading)
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack {
-                    ForEach(types.identified(by: \.self)) { author in
-//                        NavigationLink(destination: AuthorDetail(author: author)) {
+                    ForEach(categories.identified(by: \.name)) { category in
+                        NavigationLink(destination: CategoryDetailView(category: category)) {
                             VStack {
-                                Text(author)
+                                Text(category.name)
                                     .color(Color.gray)
                             }
                             .frame(width: 90)
@@ -164,7 +136,7 @@ struct TypeView : View {
                                 .shadow(radius: 10)
                                 .cornerRadius(10)
                             
-//                        }
+                        }
                     }
                 }
             }.padding()

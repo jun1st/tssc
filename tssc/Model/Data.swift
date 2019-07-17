@@ -16,7 +16,7 @@ let qiyan: [TangShi] = tangshiData.filter { $0.type == "七言古诗" }
 
 let authors: [Author] = load("tang_300_authors.json")
 
-let types: [String] = Array(Set(tangshiData.map { $0.type }))
+let categories: [Category] = load("result.json")
 
 
 func load<T: Decodable>(_ filename: String, as type: T.Type = T.self) -> T {
