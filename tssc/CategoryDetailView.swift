@@ -12,21 +12,19 @@ struct CategoryDetailView : View {
     var category: Category
     
     var body: some View {
-        VStack {
-            Text(category.name)
-                .font(.title)
-                .padding()
-            Text(category.time)
-                .font(.subheadline)
-                .padding([.bottom])
-            Text(category.speciality)
-                .lineLimit(nil)
-            Divider()
-            Text(category.summary)
-                .lineLimit(nil)
-                .padding()
-            Spacer()
-        }.navigationBarTitle(Text(category.name), displayMode: .inline)
+        Form {
+            Section(header: Text("起源")) {
+                Text(category.time)
+                    .font(.subheadline)
+                    .padding()
+            }
+            Section(header: Text("介绍")) {
+                Text(category.summary)
+                    .lineLimit(nil)
+                    .padding()
+            }
+        }
+        .navigationBarTitle(Text(category.name), displayMode: .inline)
     }
 }
 

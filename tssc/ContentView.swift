@@ -89,11 +89,11 @@ struct AuthorView : View {
                         NavigationLink(destination: AuthorDetail(author: author)) {
                             VStack {
                                 Text(author.name)
-                                    .color(Color.gray)
+                                .color(Color.black)
                             }
                             .frame(width: 90)
                             .frame(height: 120)
-                            .background(Color(red: 241/255, green: 220/255, blue: 205/255))
+                            .background(Color(red: author.red()/255.0, green: author.green()/255, blue: author.blue()/255))
                             .shadow(radius: 10)
                             .cornerRadius(10)
                             

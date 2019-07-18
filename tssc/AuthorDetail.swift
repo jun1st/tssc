@@ -12,21 +12,37 @@ struct AuthorDetail : View {
     var author: Author
     var body: some View {
         VStack {
-            Text(author.name)
-                .font(.title)
-            Text(author.nickname)
-                .font(.subheadline)
-                .color(Color.gray)
-            
-            Text(author.summary)
-                .lineLimit(nil)
-                .padding()
-            Divider()
-            NavigationLink(destination: WebView(urlString: author.baikeUrl)) {
-                Text("百度百科")
+            Form {
+                Section(header: Text("字")) {
+                    Text(author.nickname)
+                        .font(.subheadline)
+                        .color(Color.gray)
+                        .padding()
+                }
+                
+                Section(header: Text("简介")) {
+                    Text(author.summary)
+                        .lineLimit(nil)
+                        .padding()
+                }
+                
+                Section(header: Text("相关链接")) {
+                    PresentationLink(destination: WebView(urlString: author.baikeUrl)) {
+                        Text("百度百科")
+                            .color(Color.blue)
+                    }
+                }
+                
             }
-            Spacer()
-        }.navigationBarTitle(Text(author.name), displayMode: .inline)
+            
+        }
+        .navigationBarTitle(Text(author.name), displayMode: .inline)
+            .navigationBarItems(trailing: Button(action: {
+                print("clicked")
+            }) {
+                Text("作品")
+                    .color(Color.blue)
+            })
     }
 }
 
