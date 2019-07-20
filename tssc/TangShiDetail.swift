@@ -29,6 +29,7 @@ struct TangShiDetail : View {
                 VStack {
                     ForEach(tangshi.contents.identified(by: \.self)) {
                         Text($0)
+                            .font(Font.custom("Source Han Serif CN", size: 22))
                             .frame(minWidth: 0, maxWidth: .infinity, alignment: .center)
                             .padding(.top, 3)
                     }

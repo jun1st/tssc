@@ -89,6 +89,7 @@ struct AuthorView : View {
                         NavigationLink(destination: AuthorDetail(author: author)) {
                             VStack {
                                 Text(author.name)
+                                    .font(Font.custom("Source Han Serif CN", size: 22))
                                 .color(Color.black)
                             }
                             .frame(width: 90)
@@ -128,7 +129,7 @@ struct TypeView : View {
                         NavigationLink(destination: CategoryDetailView(category: category)) {
                             VStack {
                                 Text(category.name)
-                                    .color(Color.gray)
+                                    .foregroundColor(Color.gray)
                             }
                             .frame(width: 90)
                                 .frame(height: 120)

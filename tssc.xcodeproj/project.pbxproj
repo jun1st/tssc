@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		82287B4C22E35186000BA748 /* SourceHanSerifCN-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 82287B4B22E35186000BA748 /* SourceHanSerifCN-Regular.ttf */; };
 		82525AA722D77A6C00BE64D3 /* TangShiList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82525AA622D77A6C00BE64D3 /* TangShiList.swift */; };
 		825B37CA22E0BBC1001BEC56 /* Category copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825B37C922E0BBC1001BEC56 /* Category copy.swift */; };
 		825B37CE22E0BBED001BEC56 /* CategoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825B37CD22E0BBED001BEC56 /* CategoryDetailView.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		82287B4B22E35186000BA748 /* SourceHanSerifCN-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceHanSerifCN-Regular.ttf"; sourceTree = "<group>"; };
 		82525AA622D77A6C00BE64D3 /* TangShiList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TangShiList.swift; sourceTree = "<group>"; };
 		825B37C922E0BBC1001BEC56 /* Category copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Category copy.swift"; sourceTree = "<group>"; };
 		825B37CD22E0BBED001BEC56 /* CategoryDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoryDetailView.swift; path = ../../../../../../System/Volumes/Data/Users/fengd/Documents/workspace/tssc/tssc/CategoryDetailView.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 		8A23B00F22CDEAE8007643F0 /* tssc */ = {
 			isa = PBXGroup;
 			children = (
+				82287B4B22E35186000BA748 /* SourceHanSerifCN-Regular.ttf */,
 				825B37CD22E0BBED001BEC56 /* CategoryDetailView.swift */,
 				8ACB16D322D2F2070070B448 /* Model */,
 				8A23B02422D2E903007643F0 /* Content */,
@@ -211,6 +214,7 @@
 			files = (
 				8A23B01D22CDEAEA007643F0 /* LaunchScreen.storyboard in Resources */,
 				828A02EC22DE12F300E48499 /* result.json in Resources */,
+				82287B4C22E35186000BA748 /* SourceHanSerifCN-Regular.ttf in Resources */,
 				8A23B01A22CDEAEA007643F0 /* Preview Assets.xcassets in Resources */,
 				8A95227422DC7DC800D3122E /* tang_300_authors.json in Resources */,
 				8A23B01722CDEAEA007643F0 /* Assets.xcassets in Resources */,
