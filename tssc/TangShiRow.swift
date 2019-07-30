@@ -20,7 +20,7 @@ struct TangShiRow : View {
                 Text(tangshi.author)
                     .font(.subheadline)
                     .fontWeight(.thin)
-                    .color(.black)
+                    .foregroundColor(.black)
                     .padding(.top, 1.0)
             }
             Spacer()

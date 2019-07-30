@@ -15,7 +15,7 @@ struct TangShiList : View {
     
     var body: some View {
         
-        List(self.tangshis.identified(by: \.self)) { item in
+        List(self.tangshis) { item in
             NavigationLink(destination: TangShiDetail(tangshi: item)) {
                 TangShiRow(tangshi: item)
             }

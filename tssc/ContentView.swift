@@ -37,7 +37,7 @@ struct ContentView : View {
                         VStack {
                             Text("[五言绝句]")
                                 .font(.headline)
-                                .color(Color(red: 48/255, green: 120/255, blue: 175/255))
+                                .foregroundColor(Color(red: 48/255, green: 120/255, blue: 175/255))
                         }
                         .frame(minWidth:0, maxWidth: .infinity, minHeight: 100, maxHeight: 100)
                             .background(Color(red: 209/255, green: 247/255, blue: 209/255))
@@ -49,7 +49,7 @@ struct ContentView : View {
                         VStack {
                             Text("[七言绝句]")
                                 .font(.headline)
-                                .color(Color(red: 48/255, green: 120/255, blue: 175/255))
+                                .foregroundColor(Color(red: 48/255, green: 120/255, blue: 175/255))
                         }
                         .frame(minWidth:0, maxWidth: .infinity, minHeight: 100, maxHeight: 100)
                             .background(Color(red: 177/255, green: 230/255, blue: 230/255))

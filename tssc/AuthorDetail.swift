@@ -16,7 +16,7 @@ struct AuthorDetail : View {
                 Section(header: Text("字")) {
                     Text(author.nickname)
                         .font(.subheadline)
-                        .color(Color.gray)
+                        .foregroundColor(Color.gray)
                         .padding()
                 }
                 
@@ -26,12 +26,13 @@ struct AuthorDetail : View {
                         .padding()
                 }
                 
-                Section(header: Text("相关链接")) {
-                    PresentationLink(destination: WebView(urlString: author.baikeUrl)) {
-                        Text("百度百科")
-                            .color(Color.blue)
-                    }
-                }
+//                Section(header: Text("相关链接")) {
+                    
+//                    PresentationLink(destination: WebView(urlString: author.baikeUrl)) {
+//                        Text("百度百科")
+//                            .foregroundColor(Color.blue)
+//                    }
+//                }
                 
             }
             
@@ -41,7 +42,7 @@ struct AuthorDetail : View {
                 print("clicked")
             }) {
                 Text("作品")
-                    .color(Color.blue)
+                    .foregroundColor(Color.blue)
             })
     }
 }

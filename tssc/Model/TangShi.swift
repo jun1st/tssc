@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct TangShi: Hashable, Codable {
+struct TangShi: Hashable, Codable, Identifiable {
     var id: Int
     var author: String
     var contents: [String]
