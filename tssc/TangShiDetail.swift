@@ -27,7 +27,7 @@ struct TangShiDetail : View {
             
             ScrollView(.vertical, showsIndicators: false) {
                 VStack {
-                    ForEach(tangshi.contents.identified(by: \.self)) {
+                    ForEach(tangshi.contents, id: \.self) {
                         Text($0)
                             .font(Font.custom("Source Han Serif CN", size: 22))
                             .frame(minWidth: 0, maxWidth: .infinity, alignment: .center)

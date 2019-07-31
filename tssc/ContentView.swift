@@ -75,22 +75,22 @@ struct AuthorView : View {
     var title: String
     
     var body: some View {
-        return VStack() {
+        VStack() {
             HStack {
                 Text(title)
                     .font(.title)
                     .fontWeight(.heavy)
                     Spacer()
-            }
-            .padding(.leading)
+            }.padding(.leading)
+            
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack {
-                    ForEach(authors.identified(by: \.name)) { author in
+                    ForEach(authors, id: \.name) { author in
                         NavigationLink(destination: AuthorDetail(author: author)) {
                             VStack {
                                 Text(author.name)
                                     .font(Font.custom("Source Han Serif CN", size: 22))
-                                .color(Color.black)
+                                    .foregroundColor(Color.black)
                             }
                             .frame(width: 90)
                             .frame(height: 120)
@@ -102,8 +102,7 @@ struct AuthorView : View {
                     }
                 }
             }.padding()
-        }
-        .padding(.top)
+        }.padding(.top)
     }
     
     func tangshisOf(name: String) -> [TangShi] {
@@ -125,7 +124,7 @@ struct TypeView : View {
             .padding(.leading)
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack {
-                    ForEach(categories.identified(by: \.name)) { category in
+                    ForEach(categories, id:\.name) { category in
                         NavigationLink(destination: CategoryDetailView(category: category)) {
                             VStack {
                                 Text(category.name)
