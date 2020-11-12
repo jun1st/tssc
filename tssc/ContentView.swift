@@ -54,11 +54,16 @@ struct ContentView : View {
                         .frame(minWidth:0, maxWidth: .infinity, minHeight: 100, maxHeight: 100)
                             .background(Color(red: 177/255, green: 230/255, blue: 230/255))
                             .cornerRadius(10)
-                            .padding([.leading, .trailing])
+                            .padding()
                     }
                     
                 }
-            }.navigationBarTitle(Text("唐诗三百首"))
+            }.navigationBarTitle(Text("唐诗三百首"), displayMode: .inline)
+            .navigationBarItems(leading: NavigationLink(
+                                    destination: TangShiList(title: "七言绝句", tangshis: qiyan),
+                                    label: {
+                                        /*@START_MENU_TOKEN@*/Text("Navigate")/*@END_MENU_TOKEN@*/
+                                    }))
         }
     }
 }

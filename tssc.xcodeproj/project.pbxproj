@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4CDAEF41255D1ECB008E85CA /* CategoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDAEF40255D1ECB008E85CA /* CategoryDetailView.swift */; };
+		4CDAEF44255D1EFF008E85CA /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDAEF43255D1EFF008E85CA /* Category.swift */; };
 		82287B4C22E35186000BA748 /* SourceHanSerifCN-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 82287B4B22E35186000BA748 /* SourceHanSerifCN-Regular.ttf */; };
 		82525AA722D77A6C00BE64D3 /* TangShiList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82525AA622D77A6C00BE64D3 /* TangShiList.swift */; };
-		825B37CA22E0BBC1001BEC56 /* Category copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825B37C922E0BBC1001BEC56 /* Category copy.swift */; };
 		8273D40E22D97DDE005E73BF /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8273D40D22D97DDE005E73BF /* WebView.swift */; };
 		8273D41222DA2543005E73BF /* tang_authors_10.json in Resources */ = {isa = PBXBuildFile; fileRef = 8273D41122DA2543005E73BF /* tang_authors_10.json */; };
 		8273D41422DA274E005E73BF /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8273D41322DA274E005E73BF /* Author.swift */; };
@@ -22,7 +23,6 @@
 		8A23B01722CDEAEA007643F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A23B01622CDEAEA007643F0 /* Assets.xcassets */; };
 		8A23B01A22CDEAEA007643F0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A23B01922CDEAEA007643F0 /* Preview Assets.xcassets */; };
 		8A23B01D22CDEAEA007643F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A23B01B22CDEAEA007643F0 /* LaunchScreen.storyboard */; };
-		8A2602D322F14BD70033E4DB /* CategoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2602D222F14BD70033E4DB /* CategoryDetailView.swift */; };
 		8A95227422DC7DC800D3122E /* tang_300_authors.json in Resources */ = {isa = PBXBuildFile; fileRef = 8A95227322DC7DC700D3122E /* tang_300_authors.json */; };
 		8A95227622DEBF0800D3122E /* types.json in Resources */ = {isa = PBXBuildFile; fileRef = 8A95227522DEBF0800D3122E /* types.json */; };
 		8ACB16D522D2F33F0070B448 /* TangShi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACB16D422D2F33F0070B448 /* TangShi.swift */; };
@@ -33,9 +33,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4CDAEF40255D1ECB008E85CA /* CategoryDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryDetailView.swift; sourceTree = "<group>"; };
+		4CDAEF43255D1EFF008E85CA /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		4CDAEF49255D2130008E85CA /* tssc.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = tssc.entitlements; sourceTree = "<group>"; };
 		82287B4B22E35186000BA748 /* SourceHanSerifCN-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceHanSerifCN-Regular.ttf"; sourceTree = "<group>"; };
 		82525AA622D77A6C00BE64D3 /* TangShiList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TangShiList.swift; sourceTree = "<group>"; };
-		825B37C922E0BBC1001BEC56 /* Category copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Category copy.swift"; sourceTree = "<group>"; };
 		8273D40D22D97DDE005E73BF /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		8273D41122DA2543005E73BF /* tang_authors_10.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tang_authors_10.json; sourceTree = "<group>"; };
 		8273D41322DA274E005E73BF /* Author.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
@@ -50,9 +52,6 @@
 		8A23B01922CDEAEA007643F0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8A23B01C22CDEAEA007643F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A23B01E22CDEAEA007643F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8A2602D222F14BD70033E4DB /* CategoryDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoryDetailView.swift; path = ../../../../../System/Volumes/Data/Users/fengde/Documents/workspaces/tssc/tssc/CategoryDetailView.swift; sourceTree = "<group>"; };
-		8A624F6022D85E2E00448C2B /* tang_300_authors.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tang_300_authors.json; sourceTree = "<group>"; };
-		8A624F6222D864CE00448C2B /* Author.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
 		8A95227322DC7DC700D3122E /* tang_300_authors.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tang_300_authors.json; sourceTree = "<group>"; };
 		8A95227522DEBF0800D3122E /* types.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = types.json; sourceTree = "<group>"; };
 		8ACB16D422D2F33F0070B448 /* TangShi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TangShi.swift; sourceTree = "<group>"; };
@@ -76,7 +75,6 @@
 		8A23B00422CDEAE8007643F0 = {
 			isa = PBXGroup;
 			children = (
-				8A2602D222F14BD70033E4DB /* CategoryDetailView.swift */,
 				8A23B00F22CDEAE8007643F0 /* tssc */,
 				8A23B00E22CDEAE8007643F0 /* Products */,
 				8A95227222DC7DB500D3122E /* Recovered References */,
@@ -94,6 +92,8 @@
 		8A23B00F22CDEAE8007643F0 /* tssc */ = {
 			isa = PBXGroup;
 			children = (
+				4CDAEF49255D2130008E85CA /* tssc.entitlements */,
+				4CDAEF40255D1ECB008E85CA /* CategoryDetailView.swift */,
 				82287B4B22E35186000BA748 /* SourceHanSerifCN-Regular.ttf */,
 				8ACB16D322D2F2070070B448 /* Model */,
 				8A23B02422D2E903007643F0 /* Content */,
@@ -137,8 +137,6 @@
 		8A95227222DC7DB500D3122E /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
-				8A624F6222D864CE00448C2B /* Author.swift */,
-				8A624F6022D85E2E00448C2B /* tang_300_authors.json */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -146,7 +144,7 @@
 		8ACB16D322D2F2070070B448 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				825B37C922E0BBC1001BEC56 /* Category copy.swift */,
+				4CDAEF43255D1EFF008E85CA /* Category.swift */,
 				8ACB16D422D2F33F0070B448 /* TangShi.swift */,
 				8ACB16D622D2F39D0070B448 /* Data.swift */,
 				8273D41322DA274E005E73BF /* Author.swift */,
@@ -181,7 +179,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1210;
 				ORGANIZATIONNAME = fengde;
 				TargetAttributes = {
 					8A23B00C22CDEAE8007643F0 = {
@@ -236,15 +234,15 @@
 				8ACB16DB22D301820070B448 /* TangShiDetail.swift in Sources */,
 				8ACB16D722D2F39D0070B448 /* Data.swift in Sources */,
 				8A23B01322CDEAE8007643F0 /* SceneDelegate.swift in Sources */,
-				8A2602D322F14BD70033E4DB /* CategoryDetailView.swift in Sources */,
+				4CDAEF41255D1ECB008E85CA /* CategoryDetailView.swift in Sources */,
 				8ACB16D522D2F33F0070B448 /* TangShi.swift in Sources */,
 				8273D41422DA274E005E73BF /* Author.swift in Sources */,
 				8273D40E22D97DDE005E73BF /* WebView.swift in Sources */,
 				82525AA722D77A6C00BE64D3 /* TangShiList.swift in Sources */,
 				8273D41622DB799F005E73BF /* TangShiTitle.swift in Sources */,
+				4CDAEF44255D1EFF008E85CA /* Category.swift in Sources */,
 				8A23B01522CDEAE8007643F0 /* ContentView.swift in Sources */,
 				828A02EF22DE187200E48499 /* AuthorDetail.swift in Sources */,
-				825B37CA22E0BBC1001BEC56 /* Category copy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +286,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -312,7 +311,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -348,6 +347,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -366,7 +366,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -380,6 +380,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = tssc/tssc.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "tssc/Preview\\ Content";
 				DEVELOPMENT_TEAM = EW5PD4CP7C;
@@ -391,6 +392,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.fengqijun.tssc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -400,6 +402,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = tssc/tssc.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "tssc/Preview\\ Content";
 				DEVELOPMENT_TEAM = EW5PD4CP7C;
@@ -411,6 +414,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.fengqijun.tssc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
