@@ -62,7 +62,7 @@ struct ContentView : View {
             .navigationBarItems(leading: NavigationLink(
                                     destination: TangShiList(title: "七言绝句", tangshis: qiyan),
                                     label: {
-                                        /*@START_MENU_TOKEN@*/Text("Navigate")/*@END_MENU_TOKEN@*/
+                                        Text("全部")
                                     }))
         }
     }
